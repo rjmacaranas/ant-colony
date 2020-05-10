@@ -11,7 +11,12 @@
 %------------------------------------------------------------------
 
 load exampleMaps.mat                    % import example maps
-
 map = binaryOccupancyMap(simpleMap, 2); % construct map
 
+%------------------------------------------------------------------
+% The following is a test using Probabilistic Roadmap (PRM)
+% to become familiar with path planning in the Mobile Robotic 
+% Algorithms section of the MATLAB Robotics System Toolbox
+% 
+%------------------------------------------------------------------
 
