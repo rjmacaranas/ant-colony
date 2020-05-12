@@ -11,7 +11,6 @@
 
 image = imread('Dijkstra-aco-map.png');
 gray_image = rgb2gray(image);
-bw_image = gray_image < 0.5;
-
-map = binaryOccupancyMap(bw_image);
+map_matrix = gray_image < 0.5;
+map = binaryOccupancyMap(map_matrix);
 show(map)

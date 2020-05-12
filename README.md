@@ -1,5 +1,4 @@
-# An Investigation of Hybrid Ant Colony Optimization
-EE 509: Computational Intelligence
+# An Investigation of Hybrid Ant Colony Optimization \n EE 509: Computational Intelligence
 
 Cal Poly, SLO
 

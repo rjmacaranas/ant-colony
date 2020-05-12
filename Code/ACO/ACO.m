@@ -17,7 +17,7 @@ drawGraph( graph);
 %% ACO algorithm 
 
 %% Initial parameters of ACO 
-maxIter = 500;
+maxIter = 100;
 antNo = 50;
 
 tau0 = 10 * 1 / (  graph.n * mean( graph.edges(:)  )  );  % Initial phromone concentration
