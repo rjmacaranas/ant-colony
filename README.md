@@ -14,7 +14,7 @@ Cal Poly, SLO  <br> Dr. Helen Yu, Spring 2020
 Also created a flowchart for the A-star search of a 2D map which is included
 in the images folder. Made a project_code directory to include the completed
 A-star search that can be used for project results. Need to figure out how
-to measure the performance of the algorithm. Should be able to move onto
+to measure the performance of the algorithm. Should be able to move on to
 implementing the Dijkstra-ACO algorithm by this weekend.
 
 - May 12, 2020: Continued implementation of A-star search, but could not finish
