@@ -10,6 +10,13 @@ Cal Poly, SLO  <br> Dr. Helen Yu, Spring 2020
 
 
 ## Updates <a name="updates"></a>
+- May 14, 2020: Completed A-star search algorithm application to simpleMap.
+Also created a flowchart for the A-star search of a 2D map which is included
+in the images folder. Made a project_code directory to include the completed
+A-star search that can be used for project results. Need to figure out how
+to measure the performance of the algorithm. Should be able to move onto
+implementing the Dijkstra-ACO algorithm by this weekend.
+
 - May 12, 2020: Continued implementation of A-star search, but could not finish
 applying the algorithm to the simpleMap object in exampleMaps.mat. The task of
 completing this is again pushed to tomorrow. Admittedly did not have much time
