@@ -3,7 +3,7 @@ Contributors: Miclaine Emtman, RJ Macaranas, Elias Sutter
 
 Cal Poly, SLO  <br> Dr. Helen Yu, Spring 2020
 
-:ant: :chart_with_downward_trend:
+:ant: :chart_with_downwards_trend:
 
 ### Contents
 1. [Instructions](#instructions)
