@@ -1,4 +1,4 @@
-%------------------------------------------------------------------
+%----------------------------------------------------------------------------------------------
 % An Investigation of Hybrid Ant Colony Optimization
 % Contributors: Miclaine Emtman, RJ Macaranas, Elias Sutter
 % 
@@ -8,7 +8,7 @@
 % EE 509: Computational Intelligence
 % Cal Poly, SLO
 % Dr. Helen Yu, Spring 2020
-%------------------------------------------------------------------
+%----------------------------------------------------------------------------------------------
 clc;
 clear;
 close all;
@@ -16,26 +16,34 @@ close all;
 load exampleMaps.mat                    % import example maps
 map = binaryOccupancyMap(simpleMap);    % construct map
 
-robotRadius = 0.2;
-mapInflated = copy(map);
-inflate(mapInflated, robotRadius);
+% robotRadius = 0.2;
+% mapInflated = copy(map);
+% inflate(mapInflated, robotRadius);
+% 
+% mapMatrix = ~simpleMap;                 % map indexing is flipped
 
-mapMatrix = ~simpleMap;   % map indexing is flipped
+image = imread('../images/r_Dijkstra-aco-map.png');
+bw_image = image < 0.5;
+bw_image = imresize(bw_image, 0.5);
+mapMatrix = logical(bw_image);
+
+display(mapMatrix)
 startLocation = [5 5];
 endLocation = [12 2];
 
 xPos = startLocation(2);                % initialize robot x position
 yPos = startLocation(1);                % initialize robot y position
 
-xGoal = 22;
-yGoal = 20;
+xGoal = 17;
+yGoal = 30;
 
 %------------------------------------------------------------------
 % The following is adapted from alexranaldi's A_STAR repository
 % on GitHub which can be found at:
 % https://github.com/alexranaldi/A_STAR
+%
+% License for use is located in our project repository
 %------------------------------------------------------------------
-
 path = [];                              % initialize path
 
 mapDimensions = size(mapMatrix);        % get dimensions
@@ -65,13 +73,14 @@ fScore = inf(mapDimensions);
 fScore(start) = compute_cost( ...       % initialize fScore[start]
     mapDimensions, start, gr, gc);
 
+tic
 while any(openSet(:) > 0)
     
     [~, current] = min(fScore(:));
     
     if current == goal
-        final = get_path(previous, current, ...
-                    mapMatrix, costs, path);
+        final = get_path(previous, current);
+        toc
         a_star_plot(mapMatrix, costs, final);
 
         return

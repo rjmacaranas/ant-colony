@@ -9,8 +9,10 @@
 % Dr. Helen Yu, Spring 2020
 %------------------------------------------------------------------
 
-image = imread('../images/Dijkstra-aco-map.png');
-gray_image = rgb2gray(image);
-map_matrix = gray_image < 0.5;
-map = binaryOccupancyMap(map_matrix);
+image = imread('../images/r_Dijkstra-aco-map.png');
+% image = imresize(image, 0.04);
+% gray_image = rgb2gray(image);
+map_matrix = image < 0.5;
+map = binaryOccupancyMap(~map_matrix);
+
 show(map)

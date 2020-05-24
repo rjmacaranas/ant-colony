@@ -3,7 +3,7 @@ Contributors: Miclaine Emtman, RJ Macaranas, Elias Sutter
 
 Cal Poly, SLO  <br> Dr. Helen Yu, Spring 2020
 
-:dart:  :ant: :ant: :ant: :ant: :ant: :ant: :ant: :ant:
+:dart:  :ant: :ant: :ant: :ant: :ant: :ant: :ant: :ant: :ant: :ant: :ant: :ant: :ant: :ant: :ant:
 
 ### Contents
 1. [Instructions](#instructions)
