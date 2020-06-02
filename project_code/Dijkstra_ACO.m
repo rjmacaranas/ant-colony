@@ -22,11 +22,6 @@ map = binaryOccupancyMap(simpleMap);    % construct map
 % 
 % mapMatrix = ~simpleMap;                 % map indexing is flipped
 
-image = imread('Dijkstra-aco-map.png');     % read image
-bw_image = image < 0.5;                     % filter high pixels
-mapMatrix = logical(bw_image);              % create logic matrix
-map = binaryOccupancyMap(mapMatrix);        % create occupancy grid
-
 image = imread('../images/r_Dijkstra-aco-map.png');
 bw_image = image < 0.5;
 bw_image = imresize(bw_image, 0.5);
